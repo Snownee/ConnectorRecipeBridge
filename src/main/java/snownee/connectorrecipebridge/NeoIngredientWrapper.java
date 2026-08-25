@@ -27,7 +27,7 @@ public record NeoIngredientWrapper(Type type, ICustomIngredient ingredient) impl
 			}
 			ConnectorRecipeBridge.LOGGER.info("Registering NeoIngredientWrapper: {}", id);
 			//noinspection unchecked,rawtypes
-			CustomIngredientSerializer.register(new NeoIngredientWrapper.Type((Holder) (Object) holder));
+			CustomIngredientSerializer.register(new NeoIngredientWrapper.Type((Holder) holder));
 		}
 	}
 

@@ -23,7 +23,7 @@ public record NeoConditionWrapper(Type type, ICondition condition) implements Re
 			}
 			ConnectorRecipeBridge.LOGGER.info("Registering NeoConditionWrapper: {}", id);
 			//noinspection unchecked,rawtypes
-			ResourceConditions.register(new NeoConditionWrapper.Type((Holder) (Object) holder));
+			ResourceConditions.register(new NeoConditionWrapper.Type((Holder) holder));
 		}
 	}
 
